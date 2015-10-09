@@ -1,0 +1,45 @@
+@startuml
+
+skinparam backgroundColor transparent
+
+start
+partition GameStart {
+
+:Given 4 players
+Declare one player as Dealer at random;
+
+}
+partition BiddingPhase {
+
+:Given a deck of 54 cards with
+a High Joker and a Low Joker
+Deal each player 9 cards from deck;
+
+-> Starting with player left of Dealer;
+
+while (A Player (bidder) has not bid)
+
+:bidder acknowledges cards;
+
+if () then (bidder places bid (n) in range [5,10])
+:Bids n;
+else (bidder passes)
+:Bids 0;
+endif
+
+endwhile
+
+if (no one bids) then
+:dealer bids minimum of 5;
+endif
+
+:Highest bid bidder is Pitcher;
+:Pitcher determines trump suit;
+
+}
+
+partition DownToSix {
+
+}
+
+@enduml

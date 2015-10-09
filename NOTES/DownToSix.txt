@@ -1,0 +1,20 @@
+@startuml
+
+skinparam backgroundColor transparent
+
+:;
+
+-> Given: Pitcher, PitchersBid, TrumpSuit,
+	Deck[54 - 4 * 9];
+
+partition DownToSix {
+
+while (Each player not Pitcher)
+	
+    :Discard 3 of 9;
+
+endwhile
+
+}
+
+@enduml
