@@ -1,5 +1,8 @@
 # Randall Ryder Pitch
 
+Documents:
+ * [Gameplay Mechanics](https://docs.google.com/document/d/1vlS1MlH119EY5btTJeoGPgkzjx5Ad_cfgJnp3hCTXZM/edit?usp=sharing)
+
 ## Technologies to be used
 
 > GitHub is our collaboration tool for this project, to get up to speed on
